@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  web:
+    build: ./django_nginx_docker
+    ports:
+        - 8000:8000
+  nginx:
+    build: ./nginx_part
+    ports:
+      - 80:80
+    depends_on:
+      - web
