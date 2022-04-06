@@ -15,3 +15,9 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_docker_nginx.settings.de
 
 #to start the docker-compose
 go to the directory where the yml file is and type docker-compose up --build
+
+
+
+# I pushed the nginx_part to docker up
+by: docker build -t rajimu/nginx_part .
+then: docker push rajimu/nginx_part
